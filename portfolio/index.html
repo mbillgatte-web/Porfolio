@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de MBEPPA KENGGNE Bill-Gatte — Étudiant en Génie Logiciel, spécialisé en automatisation n8n, IA et développement Full-Stack. Freelance basé au Cameroun." />
+  <meta name="keywords" content="génie logiciel, automatisation, n8n, IA, full-stack, Django, Laravel, Cameroun, développeur, freelance" />
+  <meta property="og:title" content="Bill-Gatte — Automatisation & IA | Portfolio" />
+  <meta property="og:description" content="Portfolio de Bill-Gatte Mbeppa — Développeur Full-Stack, automatisation n8n et IA." />
+  <meta property="og:type" content="website" />
+
+  <title>Bill-Gatte Mbeppa — Automatisation & IA | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- ═══════ CANVAS BACKGROUND ═══════ -->
+<canvas id="canvas-bg" aria-hidden="true"></canvas>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Navigation principale">
+  <div class="container nav-inner">
+    <!-- Logo -->
+    <a href="#hero" class="nav-logo" id="nav-logo-link">
+      <span class="logo-dot"></span>
+      bill<span style="color:var(--accent-teal)">.</span>gatte
+    </a>
+
+    <!-- Links -->
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#about"          id="nav-about">À propos</a></li>
+      <li><a href="#skills"         id="nav-skills">Compétences</a></li>
+      <li><a href="#certifications" id="nav-certs">Certifications</a></li>
+      <li><a href="#experience"     id="nav-exp">Expériences</a></li>
+      <li><a href="#projects"       id="nav-projects">Projets</a></li>
+      <li><a href="#contact"        id="nav-contact" class="nav-cta">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 1 : HERO
+════════════════════════════════════════════ -->
+<section id="hero" aria-label="Présentation principale">
+  <div class="hero-bg-image" aria-hidden="true"></div>
+  <div class="hero-bg-gradient" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+
+      <!-- ─ Texte ─ -->
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponible · Freelance · Remote
+        </div>
+
+        <h1 class="hero-name">
+          MBEPPA Kengne<br>
+          <span class="gradient-text">Bill-Gatte</span>
+        </h1>
+
+        <div class="hero-title-typed" aria-live="polite">
+          <span class="typed-text"></span><span class="cursor-blink" aria-hidden="true"></span>
+        </div>
+
+        <p class="hero-description">
+          Étudiant en <strong>Génie Logiciel</strong> à IAI-Cameroun, passionné par l'<strong>automatisation avec n8n</strong>,
+          l'intelligence artificielle et le développement Full-Stack. Je transforme des idées en flux automatisés,
+          applications robustes et agents IA intelligents.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" id="hero-btn-contact">
+            <i class="fa-solid fa-paper-plane"></i> Me contacter
+          </a>
+          <a href="#projects" class="btn btn-secondary" id="hero-btn-projects">
+            <i class="fa-solid fa-diagram-project"></i> Voir projets
+          </a>
+          <!-- CV placeholder — remplacer href plus tard -->
+          <a href="assets/CV_BillGatte.pdf" download class="btn btn-outline-purple" id="hero-btn-cv">
+             <i class="fa-solid fa-file-arrow-down"></i> Télécharger CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="3" data-suffix="e">3e</span>
+            <span class="stat-label">Année Licence</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="2" data-suffix="">2</span>
+            <span class="stat-label">Stages terrain</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="8" data-suffix="+">8+</span>
+            <span class="stat-label">Techno maîtrisées</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="1" data-suffix="">1</span>
+            <span class="stat-label">Certif. vérifiée</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─ Visuel ─ -->
+      <div class="hero-visual">
+        <div class="profile-ring-outer">
+          <div class="ring-animated"   aria-hidden="true"></div>
+          <div class="ring-animated-2" aria-hidden="true"></div>
+
+          <div class="profile-img-wrap">
+            <!-- Remplacer src par ta photo : assets/images/ma_photo.jpg -->
+            <img
+              src="assets/images/ma_photo.jpg"
+              alt="Photo de profil — Bill-Gatte Mbeppa Kenggne"
+              id="profile-photo"
+            />
+          </div>
+
+          <!-- Badges flottants -->
+          <div class="hero-float-badge badge-top-right">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>n8n Workflows</span>
+          </div>
+          <div class="hero-float-badge badge-bottom-left">
+            <i class="fa-solid fa-robot"></i>
+            <span>IA Agents</span>
+          </div>
+          <div class="hero-float-badge badge-top-left">
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Full-Stack</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /hero-content -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 2 : À PROPOS
+════════════════════════════════════════════ -->
+<section id="about" aria-labelledby="about-title">
+  <div class="container">
+    <span class="section-label reveal">// À propos</span>
+    <h2 class="section-title reveal" id="about-title">
+      Qui suis-je &amp; <span class="gradient-text">ma vision</span>
+    </h2>
+
+    <div class="about-grid">
+      <!-- Texte -->
+      <div class="about-text">
+        <p class="reveal">
+          Je suis <span class="highlight">MBEPPA KENGNE Bill-Gatte</span>, étudiant en 3e année de cycle licence
+          à <span class="highlight">IAI-Cameroun</span> (option Génie Logiciel, 2023–2026).
+          Passionné de technologie depuis tout jeune, j'ai orienté mon parcours vers
+          ce qui me fascine le plus : <span class="highlight">l'automatisation intelligente</span>.
+        </p>
+        <p class="reveal">
+          Avec <span class="highlight">n8n</span>, je conçois des flux d'automatisation qui connectent
+          des APIs, orchestrent des agents IA, et éliminent les tâches répétitives.
+          Ma philosophie : <em>"Automatiser le répétable pour libérer le créatif."</em>
+        </p>
+        <p class="reveal">
+          En parallèle, je développe des applications web robustes (Django, Laravel),
+          des interfaces soignées (HTML/CSS/JS) et j'explore les réseaux,
+          la sécurité des bases de données, et le design graphique.
+        </p>
+
+        <!-- Timeline académique -->
+        <div class="about-timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-content">
+              <h4>IAI-Cameroun — Licence Génie Logiciel</h4>
+              <span>2023 — 2026</span>
+              <p>Option Génie Logiciel · Conception UML, bases de données, réseaux, dev web & mobile</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-content">
+              <h4>Stage — Salar</h4>
+              <span>2025 · 3 mois</span>
+              <p>Développement Django · Analyse &amp; conception UML/Merise</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-palette"></i></div>
+            <div class="timeline-content">
+              <h4>Stage — REAX</h4>
+              <span>2024 · 3 mois</span>
+              <p>Design graphique &amp; programmation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cartes d'info -->
+      <div class="about-info-cards">
+        <!-- Localisation -->
+        <div class="info-card reveal">
+          <div class="info-card-header">
+            <div class="info-card-icon teal"><i class="fa-solid fa-location-dot"></i></div>
+            <h4>Localisation</h4>
+          </div>
+          <div class="info-card-body">
+            <strong>Cameroun</strong> · Services à distance (Remote) · Freelance disponible mondialement
+          </div>
+        </div>
+
+        <!-- Formation -->
+        <div class="info-card reveal">
+          <div class="info-card-header">
+            <div class="info-card-icon purple"><i class="fa-solid fa-brain"></i></div>
+            <h4>Focus &amp; Spécialités</h4>
+          </div>
+          <div class="info-card-body">
+            Automatisation <strong>n8n</strong> · Agents IA (Claude, Gemini) · Dev Full-Stack ·
+            Administration réseau LAN · Design graphique (Photoshop)
+          </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="info-card reveal">
+          <div class="info-card-header">
+            <div class="info-card-icon pink"><i class="fa-solid fa-language"></i></div>
+            <h4>Langues</h4>
+          </div>
+          <div class="info-card-body">
+            <div class="lang-flags">
+              <span class="lang-tag">🇫🇷 Français — Courant</span>
+              <span class="lang-tag">🇬🇧 Anglais — Basic</span>
+              <span class="lang-tag">🇪🇸 Espagnol — Notions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Méthodes -->
+        <div class="info-card reveal">
+          <div class="info-card-header">
+            <div class="info-card-icon teal"><i class="fa-solid fa-diagram-project"></i></div>
+            <h4>Méthodologies</h4>
+          </div>
+          <div class="info-card-body">
+            UML (à l'aise) · Merise (bases) · Documentation technique · Analyse &amp; conception logicielle
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 3 : COMPÉTENCES
+════════════════════════════════════════════ -->
+<section id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <span class="section-label reveal">// Compétences</span>
+    <h2 class="section-title reveal" id="skills-title">
+      Mon <span class="gradient-text">stack technique</span>
+    </h2>
+    <p class="section-subtitle reveal">
+      Des outils soigneusement choisis, du frontend au backend, de l'automatisation à l'IA.
+    </p>
+
+    <div class="skills-grid">
+      <!-- Frontend -->
+      <div class="skill-card accent-teal reveal">
+        <div class="skill-card-icon"><i class="fa-brands fa-html5"></i></div>
+        <h3>Frontend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Responsive</span>
+          <span class="skill-tag">Flutter</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-card accent-purple reveal">
+        <div class="skill-card-icon"><i class="fa-brands fa-python"></i></div>
+        <h3>Backend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">Laravel</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+
+      <!-- Automatisation n8n -->
+      <div class="skill-card accent-teal reveal">
+        <div class="skill-card-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+        <h3>Automatisation n8n</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">n8n Workflows</span>
+          <span class="skill-tag">Web Scraping</span>
+          <span class="skill-tag">API Webhooks</span>
+          <span class="skill-tag">Triggers</span>
+          <span class="skill-tag">Agents IA</span>
+          <span class="skill-tag">Email Auto</span>
+        </div>
+      </div>
+
+      <!-- IA & LLMs -->
+      <div class="skill-card accent-purple reveal">
+        <div class="skill-card-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>Intelligence Artificielle</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Claude (Anthropic)</span>
+          <span class="skill-tag">Gemini</span>
+          <span class="skill-tag">Sub-agents</span>
+          <span class="skill-tag">Prompt Eng.</span>
+          <span class="skill-tag">Machine Learning</span>
+        </div>
+      </div>
+
+      <!-- Bases de données -->
+      <div class="skill-card accent-pink reveal">
+        <div class="skill-card-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Bases de données</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Sécurité BD</span>
+          <span class="skill-tag">UML/Merise</span>
+          <span class="skill-tag">Modélisation</span>
+        </div>
+      </div>
+
+      <!-- Réseaux -->
+      <div class="skill-card accent-teal reveal">
+        <div class="skill-card-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <h3>Réseaux & Sécurité</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">LAN</span>
+          <span class="skill-tag">iptables</span>
+          <span class="skill-tag">Pare-feu</span>
+          <span class="skill-tag">Architecture réseau</span>
+        </div>
+      </div>
+
+      <!-- Design -->
+      <div class="skill-card accent-pink reveal">
+        <div class="skill-card-icon"><i class="fa-solid fa-paint-brush"></i></div>
+        <h3>Design Graphique</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Affiches & Flyers</span>
+          <span class="skill-tag">Filtres Snapchat</span>
+          <span class="skill-tag">UI/UX</span>
+        </div>
+      </div>
+
+      <!-- Outils & Méthodes -->
+      <div class="skill-card accent-purple reveal">
+        <div class="skill-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>Outils & Méthodes</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">UML</span>
+          <span class="skill-tag">Merise</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 4 : CERTIFICATIONS
+════════════════════════════════════════════ -->
+<section id="certifications" aria-labelledby="certs-title">
+  <div class="container">
+    <span class="section-label reveal">// Certifications</span>
+    <h2 class="section-title reveal" id="certs-title">
+      Mes <span class="gradient-text">badges & formations</span>
+    </h2>
+    <p class="section-subtitle reveal">
+      Formations reconnues et certifications professionnelles — clique pour vérifier.
+    </p>
+
+    <div class="certs-grid">
+
+      <!-- Cert 1 — Claude (vérifié) -->
+      <a
+        href="https://verify.skilljar.com/c/pe37anwo7nbu"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cert-card reveal"
+        id="cert-claude"
+        aria-label="Certification Claude — Création de sous-agents — Vérifier"
+      >
+        <div class="cert-header">
+          <div class="cert-icon teal"><i class="fa-solid fa-robot"></i></div>
+          <div>
+            <div class="cert-title">Création de sous-agents IA</div>
+            <div class="cert-issuer">Anthropic / Claude — SkillJar</div>
+          </div>
+        </div>
+        <div class="cert-status verified">
+          <i class="fa-solid fa-circle-check"></i> Certifié &amp; Vérifiable
+        </div>
+        <div class="cert-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+      </a>
+
+      <!-- Cert 2 — Machine Learning Google (en cours) -->
+      <div class="cert-card not-yet reveal" id="cert-ml" aria-label="Certification Machine Learning Google — En cours">
+        <div class="cert-header">
+          <div class="cert-icon orange"><i class="fa-brands fa-google"></i></div>
+          <div>
+            <div class="cert-title">Machine Learning</div>
+            <div class="cert-issuer">Google — En cours d'obtention</div>
+          </div>
+        </div>
+        <div class="cert-status in-progress">
+          <i class="fa-solid fa-spinner"></i> En cours
+        </div>
+      </div>
+
+      <!-- Cert 3 — Coursera (planifié) -->
+      <div class="cert-card not-yet reveal" id="cert-coursera" aria-label="Certification Coursera — Planifiée">
+        <div class="cert-header">
+          <div class="cert-icon purple"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <div class="cert-title">Coursera — Certification</div>
+            <div class="cert-issuer">Coursera — Bientôt</div>
+          </div>
+        </div>
+        <div class="cert-status planned">
+          <i class="fa-regular fa-clock"></i> Planifié
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 5 : EXPÉRIENCES
+════════════════════════════════════════════ -->
+<section id="experience" aria-labelledby="exp-title">
+  <div class="container">
+    <span class="section-label reveal">// Expériences</span>
+    <h2 class="section-title reveal" id="exp-title">
+      Terrain &amp; <span class="gradient-text">stages</span>
+    </h2>
+    <p class="section-subtitle reveal">
+      Des expériences concrètes qui ont forgé mes compétences techniques et professionnelles.
+    </p>
+
+    <div class="experience-grid">
+      <!-- Stage Salar -->
+      <div class="exp-card reveal-left" id="exp-salar">
+        <div class="exp-header">
+          <div>
+            <div class="exp-company">🏢 Salar</div>
+            <div class="exp-role">Développeur Full-Stack stagiaire</div>
+          </div>
+          <span class="exp-period">2025 · 3 mois</span>
+        </div>
+        <ul class="exp-tasks">
+          <li>Développement d'applications web avec <strong>Django</strong> (Python)</li>
+          <li>Analyse et conception des besoins (diagrammes <strong>UML</strong>)</li>
+          <li>Modélisation de bases de données avec la méthode <strong>Merise</strong></li>
+          <li>Collaboration en équipe, documentation technique, tests</li>
+        </ul>
+      </div>
+
+      <!-- Stage REAX -->
+      <div class="exp-card reveal-right" id="exp-reax">
+        <div class="exp-header">
+          <div>
+            <div class="exp-company">🎨 REAX</div>
+            <div class="exp-role">Designer & Développeur stagiaire</div>
+          </div>
+          <span class="exp-period">2024 · 3 mois</span>
+        </div>
+        <ul class="exp-tasks">
+          <li>Création de supports visuels : <strong>affiches, flyers, contenus numériques</strong></li>
+          <li>Design de filtres AR avec <strong>Photoshop</strong> (Snapchat Lens)</li>
+          <li>Développement web — intégration de maquettes</li>
+          <li>Collaboration créative &amp; communication visuelle</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 6 : PROJETS
+════════════════════════════════════════════ -->
+<section id="projects" aria-labelledby="proj-title">
+  <div class="container">
+    <span class="section-label reveal">// Projets</span>
+    <h2 class="section-title reveal" id="proj-title">
+      Ce que j'ai <span class="gradient-text">construit</span>
+    </h2>
+    <p class="section-subtitle reveal">
+      Projets réalisés, en cours et idées futures — tous orientés automatisation et impact réel.
+    </p>
+
+    <!-- Tabs -->
+    <div class="projects-tabs reveal" role="tablist" aria-label="Filtrer les projets">
+      <button class="tab-btn active" data-tab="all"    role="tab" aria-selected="true"  id="tab-all">Tous</button>
+      <button class="tab-btn"        data-tab="done"   role="tab" aria-selected="false" id="tab-done">Réalisés</button>
+      <button class="tab-btn"        data-tab="ongoing"role="tab" aria-selected="false" id="tab-ongoing">En cours</button>
+      <button class="tab-btn"        data-tab="future" role="tab" aria-selected="false" id="tab-future">Futurs</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- Projet 1 — Pare-feu iptables -->
+      <div class="project-card reveal" data-status="done" id="proj-firewall">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <span class="project-badge done">Réalisé</span>
+        </div>
+        <div class="project-title">Pare-feu iptables</div>
+        <div class="project-description">
+          Configuration et déploiement d'un pare-feu iptables pour l'administration réseau d'entreprise.
+          Règles de filtrage, gestion des flux entrants/sortants et sécurisation du LAN.
+        </div>
+        <div class="project-techs">
+          <span class="tech-tag">Linux</span>
+          <span class="tech-tag">iptables</span>
+          <span class="tech-tag">Administration réseau</span>
+          <span class="tech-tag">Sécurité</span>
+        </div>
+      </div>
+
+      <!-- Projet 2 — App Voyage -->
+      <div class="project-card reveal" data-status="done" id="proj-travel">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-plane-departure"></i></div>
+          <span class="project-badge done">Réalisé</span>
+        </div>
+        <div class="project-title">Application de Voyage</div>
+        <div class="project-description">
+          Application destinée aux touristes pour planifier des itinéraires, découvrir des points d'intérêt
+          et organiser leurs déplacements avec une interface intuitive.
+        </div>
+        <div class="project-techs">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">API Maps</span>
+          <span class="tech-tag">MySQL</span>
+        </div>
+      </div>
+
+      <!-- Projet 3 — Agent Email -->
+      <div class="project-card reveal" data-status="done" id="proj-email-agent">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+          <span class="project-badge done">Réalisé</span>
+        </div>
+        <div class="project-title">Agent Email Intelligent</div>
+        <div class="project-description">
+          Agent IA capable de <strong>résumer, rédiger et envoyer</strong> des emails automatiquement.
+          Intégration LLM + automatisation n8n pour un flux email 100% autonome.
+        </div>
+        <div class="project-techs">
+          <span class="tech-tag">n8n</span>
+          <span class="tech-tag">LLM / Claude</span>
+          <span class="tech-tag">Gmail API</span>
+          <span class="tech-tag">Python</span>
+        </div>
+      </div>
+
+      <!-- Projet 4 — Agent Réseaux Sociaux -->
+      <div class="project-card reveal" data-status="ongoing" id="proj-social-agent">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-share-nodes"></i></div>
+          <span class="project-badge ongoing">En cours</span>
+        </div>
+        <div class="project-title">Agent Publication Réseaux Sociaux</div>
+        <div class="project-description">
+          Agent qui <strong>recherche du contenu</strong> en temps réel, le reformule avec un LLM
+          et le publie automatiquement sur plusieurs plateformes sociales.
+        </div>
+        <div class="project-techs">
+          <span class="tech-tag">n8n</span>
+          <span class="tech-tag">Web Scraping</span>
+          <span class="tech-tag">LLM</span>
+          <span class="tech-tag">Social APIs</span>
+        </div>
+      </div>
+
+      <!-- Projet 5 — Tutoriel Avatar -->
+      <div class="project-card reveal" data-status="future" id="proj-avatar">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+          <span class="project-badge idea">Idée</span>
+        </div>
+        <div class="project-title">Tutoriel Avatar Évolutif</div>
+        <div class="project-description">
+          Avatar IA personnalisé pour tutoriels interactifs. Mode local + IA offline possible.
+          Permet une expérience d'apprentissage immersive et adaptative.
+        </div>
+        <div class="project-techs">
+          <span class="tech-tag">IA locale</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">TTS</span>
+          <span class="tech-tag">Avatar 3D</span>
+        </div>
+      </div>
+
+      <!-- Projet 6 — Prédiction -->
+      <div class="project-card reveal" data-status="future" id="proj-prediction">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <span class="project-badge idea">Idée</span>
+        </div>
+        <div class="project-title">Prédiction Scores & Tendances</div>
+        <div class="project-description">
+          Modèle de prédiction basé sur des <strong>réseaux de neurones</strong> pour analyser
+          des patterns sport / finance. Détection de tendances avec données temps réel.
+        </div>
+        <div class="project-techs">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">TensorFlow</span>
+          <span class="tech-tag">ML</span>
+          <span class="tech-tag">Data scraping</span>
+        </div>
+      </div>
+
+      <!-- Projet 7 — E-commerce Auto -->
+      <div class="project-card reveal" data-status="future" id="proj-ecommerce">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+          <span class="project-badge idea">Idée</span>
+        </div>
+        <div class="project-title">Automatisation E-commerce</div>
+        <div class="project-description">
+          Système d'automatisation complète pour la gestion des ventes e-commerce :
+          commandes, stocks, emails clients, reporting — 100% via n8n.
+        </div>
+        <div class="project-techs">
+          <span class="tech-tag">n8n</span>
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">Stripe API</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 7 : CONTACT
+════════════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <span class="section-label reveal">// Contact</span>
+    <h2 class="section-title reveal" id="contact-title">
+      Travaillons <span class="gradient-text">ensemble</span>
+    </h2>
+
+    <div class="contact-wrapper">
+      <!-- Infos -->
+      <div class="contact-info-text reveal-left">
+        <p>
+          Disponible pour des <strong>missions freelance</strong>, des collaborations sur des projets
+          d'automatisation n8n, d'IA ou de développement Full-Stack.
+          Réponse rapide garantie — n'hésite pas à me contacter directement.
+        </p>
+
+        <div class="contact-links-list">
+
+          <!-- Email -->
+          <a href="mailto:mbillgatte@gmail.com" class="contact-link" id="contact-email" aria-label="Envoyer un email">
+            <div class="contact-link-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">mbillgatte@gmail.com</div>
+            </div>
+            <div class="contact-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <!-- WhatsApp 1 -->
+          <a href="https://wa.me/237697199820" target="_blank" rel="noopener noreferrer"
+             class="contact-link" id="contact-wa1" aria-label="WhatsApp principal">
+            <div class="contact-link-icon" style="color:#25D366;background:rgba(37,211,102,0.08);">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">WhatsApp (principal)</div>
+              <div class="contact-link-value">+237 697 199 820</div>
+            </div>
+            <div class="contact-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <!-- WhatsApp 2 -->
+          <a href="https://wa.me/237657248116" target="_blank" rel="noopener noreferrer"
+             class="contact-link" id="contact-wa2" aria-label="WhatsApp secondaire">
+            <div class="contact-link-icon" style="color:#25D366;background:rgba(37,211,102,0.08);">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">WhatsApp (secondaire)</div>
+              <div class="contact-link-value">+237 657 248 116</div>
+            </div>
+            <div class="contact-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/bill-gatte-mbeppa-14659839a" target="_blank" rel="noopener noreferrer"
+             class="contact-link" id="contact-linkedin" aria-label="Voir mon LinkedIn">
+            <div class="contact-link-icon" style="color:#0A66C2;background:rgba(10,102,194,0.08);">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">bill-gatte-mbeppa</div>
+            </div>
+            <div class="contact-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/mbillgatte-web" target="_blank" rel="noopener noreferrer"
+             class="contact-link" id="contact-github" aria-label="Voir mon GitHub">
+            <div class="contact-link-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-value">mbillgatte-web</div>
+            </div>
+            <div class="contact-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <!-- Fiverr -->
+          <a href="https://www.fiverr.com/s/YRrNrk4" target="_blank" rel="noopener noreferrer"
+             class="contact-link" id="contact-fiverr" aria-label="Voir mon profil Fiverr">
+            <div class="contact-link-icon" style="color:#1DBF73;background:rgba(29,191,115,0.08);">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Fiverr — Freelance</div>
+              <div class="contact-link-value">fiverr.com/s/YRrNrk4</div>
+            </div>
+            <div class="contact-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+        </div><!-- /contact-links-list -->
+      </div>
+
+      <!-- Carte disponibilité -->
+      <div class="availability-card reveal-right">
+        <div class="avail-header">
+          <div class="avail-dot"></div>
+          <h3>Disponible pour <span>collaborer</span></h3>
+        </div>
+
+        <ul class="avail-services">
+          <li>
+            <i class="fa-solid fa-circle-nodes"></i>
+            Automatisation de workflows n8n
+          </li>
+          <li>
+            <i class="fa-solid fa-robot"></i>
+            Création d'agents IA (Claude, Gemini)
+          </li>
+          <li>
+            <i class="fa-solid fa-code"></i>
+            Développement web Full-Stack (Django, Laravel)
+          </li>
+          <li>
+            <i class="fa-solid fa-mobile-screen"></i>
+            Applications mobiles Flutter
+          </li>
+          <li>
+            <i class="fa-solid fa-paint-brush"></i>
+            Design graphique &amp; supports visuels
+          </li>
+          <li>
+            <i class="fa-solid fa-network-wired"></i>
+            Administration réseau &amp; sécurité BD
+          </li>
+        </ul>
+
+        <div class="avail-cta-group">
+          <a href="https://wa.me/237697199820" target="_blank" rel="noopener noreferrer"
+             class="btn btn-primary" id="avail-btn-wa">
+            <i class="fa-brands fa-whatsapp"></i> Démarrer sur WhatsApp
+          </a>
+          <a href="mailto:mbillgatte@gmail.com" class="btn btn-secondary" id="avail-btn-email">
+            <i class="fa-solid fa-envelope"></i> Envoyer un email
+          </a>
+          <a href="https://www.fiverr.com/s/YRrNrk4" target="_blank" rel="noopener noreferrer"
+             class="btn btn-outline-purple" id="avail-btn-fiverr">
+            <i class="fa-solid fa-briefcase"></i> Commander sur Fiverr
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-logo">
+      bill<span>.</span>gatte — <span>Portfolio</span>
+    </div>
+
+    <div class="footer-sig">
+      <span>Portfolio — Pure JS | Automatisation &amp; IA</span><br>
+      <span style="color:var(--text-muted);font-size:0.7rem;">
+        © 2025 MBEPPA KENGGNE Bill-Gatte · IAI-Cameroun · Génie Logiciel
+      </span>
+    </div>
+
+    <div class="footer-social" aria-label="Liens sociaux">
+      <a href="https://github.com/mbillgatte-web"
+         target="_blank" rel="noopener noreferrer"
+         id="footer-github" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bill-gatte-mbeppa-14659839a"
+         target="_blank" rel="noopener noreferrer"
+         id="footer-linkedin" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://wa.me/237697199820"
+         target="_blank" rel="noopener noreferrer"
+         id="footer-whatsapp" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.fiverr.com/s/YRrNrk4"
+         target="_blank" rel="noopener noreferrer"
+         id="footer-fiverr" aria-label="Fiverr">
+        <i class="fa-solid fa-briefcase"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── JS ── -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
