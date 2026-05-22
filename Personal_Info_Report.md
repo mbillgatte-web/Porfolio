@@ -40,9 +40,11 @@
 1. Pare-feu iptables
    - Description : Configuration et déploiement d'un pare-feu iptables pour l'administration réseau d'entreprise. Règles de filtrage, gestion des flux entrants/sortants et sécurisation du LAN.
    - Technologies : Linux, iptables, administration réseau, sécurité
+   - Repository GitHub : https://github.com/mbillgatte-web/Parfeu-dynamique-avec-iptables-.git
 2. Application de Voyage
    - Description : Application destinée aux touristes pour planifier des itinéraires, découvrir des points d'intérêt et organiser leurs déplacements avec une interface intuitive.
    - Technologies : Flutter, Django, API Maps, MySQL
+   - Repository GitHub : https://github.com/mbillgatte-web/Site_touristique_firstgit.git
 3. Agent Email Intelligent
    - Description : Agent IA capable de résumer, rédiger et envoyer des emails automatiquement. Intégration LLM + automatisation n8n pour un flux email autonome.
    - Technologies : n8n, LLM / Claude, Gmail API, Python
