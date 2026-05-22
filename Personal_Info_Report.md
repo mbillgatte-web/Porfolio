@@ -28,6 +28,10 @@
   - Émetteur : Anthropic / Claude — SkillJar
   - Statut : Certifié & vérifiable
   - Lien de vérification : https://verify.skilljar.com/c/pe37anwo7nbu
+- IA pour les professionnels
+  - Émetteur : HP LIFE
+  - Statut : Certifié
+  - Lien de vérification : https://www.life-global.org/certificate/9a17e7cb-a629-4540-9c52-02c07239ea58
 - Machine Learning
   - Émetteur : Google
   - Statut : En cours d'obtention
