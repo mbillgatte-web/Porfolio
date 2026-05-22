@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)" rx="40"/>
+  <path d="M220 560 H980 L900 320 H300 Z" fill="rgba(255,255,255,0.08)"/>
+  <path d="M340 380 H860 V520 H340 Z" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="620" cy="450" r="38" fill="#0ff" opacity="0.9"/>
+  <path d="M380 420 H460" stroke="#0ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M380 470 H540" stroke="#0ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M380 520 H660" stroke="#0ff" stroke-width="12" stroke-linecap="round"/>
+  <text x="600" y="620" fill="#f8fafc" font-family="Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle">CEIMPORT</text>
+  <text x="600" y="680" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="32" text-anchor="middle">Vitrine responsive & stylée</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)" rx="40"/>
+  <circle cx="240" cy="240" r="120" fill="rgba(255,255,255,0.08)"/>
+  <path d="M230 180 L310 180 L310 260 L390 260 L390 340 L310 340 L310 420 L230 420 L230 340 L150 340 L150 260 L230 260 Z" fill="rgba(255,255,255,0.12)" stroke="#0ff" stroke-width="8"/>
+  <text x="600" y="480" fill="#f8fafc" font-family="Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle">Pare-feu iptables</text>
+  <text x="600" y="560" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="32" text-anchor="middle">Sécurité réseau & gestion des flux</text>
+</svg>

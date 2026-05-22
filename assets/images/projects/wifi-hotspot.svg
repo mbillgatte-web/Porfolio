@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)" rx="40"/>
+  <path d="M600 220 C760 220 860 320 860 460 C860 560 760 660 600 660 C440 660 340 560 340 460 C340 320 440 220 600 220 Z" fill="rgba(255,255,255,0.08)"/>
+  <path d="M600 320 C700 320 760 380 760 460 C760 520 700 580 600 580 C500 580 440 520 440 460 C440 380 500 320 600 320 Z" fill="rgba(255,255,255,0.14)"/>
+  <circle cx="600" cy="460" r="52" fill="#0ff" opacity="0.85"/>
+  <text x="600" y="620" fill="#f8fafc" font-family="Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle">WiFi Hotspot</text>
+  <text x="600" y="680" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="32" text-anchor="middle">Portail captif & gestion réseau</text>
+</svg>

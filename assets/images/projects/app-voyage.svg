@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)" rx="40"/>
+  <path d="M220 520 Q320 240 520 200 Q720 160 900 340 Q980 440 900 520 Q760 640 520 620 Q360 600 220 520 Z" fill="rgba(255,255,255,0.12)"/>
+  <path d="M320 520 L430 420 L540 520 L650 360" stroke="#0ff" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="720" cy="370" r="38" fill="#0ff" opacity="0.8"/>
+  <text x="600" y="470" fill="#f8fafc" font-family="Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle">Application de Voyage</text>
+  <text x="600" y="540" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="32" text-anchor="middle">Itinéraires, lieux et planification</text>
+</svg>

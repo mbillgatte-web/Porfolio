@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)" rx="40"/>
+  <rect x="180" y="240" width="840" height="340" rx="30" fill="rgba(255,255,255,0.08)"/>
+  <path d="M240 320 L960 320 L960 560 L240 560 Z" fill="none" stroke="#0ff" stroke-width="10"/>
+  <polyline points="240,320 600,460 960,320" fill="none" stroke="#0ff" stroke-width="10"/>
+  <circle cx="860" cy="420" r="34" fill="#0ff" opacity="0.9"/>
+  <text x="600" y="560" fill="#f8fafc" font-family="Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle">Agent Email</text>
+  <text x="600" y="620" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="32" text-anchor="middle">LLM & automatisation n8n</text>
+</svg>
