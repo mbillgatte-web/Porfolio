@@ -108,3 +108,4 @@
 
 ## Remarque
 Ce rapport conserve uniquement les données personnelles et professionnelles extraites des fichiers du projet. Il ne contient pas de données additionnelles provenant de sources externes.
+
