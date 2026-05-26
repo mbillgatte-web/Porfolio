@@ -1425,3 +1425,200 @@ footer {
   .hero-stats { gap: 24px; }
   .projects-tabs { flex-wrap: wrap; }
 }
+
+/* =====================================================
+   DESIGN PORTFOLIO STYLES (Fan-out Carousels & Modal)
+   ===================================================== */
+
+/* btn-outline-pink */
+.btn-outline-pink {
+  background: transparent;
+  color: var(--accent-pink);
+  border-color: var(--accent-pink);
+}
+.btn-outline-pink:hover {
+  background: rgba(244,114,182,0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(244,114,182,0.3);
+}
+
+/* Design Gallery Grid */
+.design-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px 40px;
+  padding: 40px 0;
+  justify-items: center;
+}
+
+/* Carousel Fan-Out Stack */
+.carousel-stack {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4; /* Typical poster ratio */
+  cursor: pointer;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+  transform-origin: bottom center;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-grow: 1;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card .card-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(22, 22, 31, 0.9);
+  backdrop-filter: blur(10px);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  border-top: 1px solid var(--border);
+}
+
+/* Default Stacked State (No hover) */
+.carousel-card:nth-child(1) {
+  transform: translateY(0) scale(1) rotate(0);
+  z-index: 3;
+}
+.carousel-card:nth-child(2) {
+  transform: translateY(-10px) scale(0.95) rotate(-2deg);
+  z-index: 2;
+  opacity: 0.8;
+}
+.carousel-card:nth-child(3) {
+  transform: translateY(-20px) scale(0.9) rotate(2deg);
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* Hover Fan-Out State */
+.carousel-stack:hover .carousel-card {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+.carousel-stack:hover .carousel-card:nth-child(1) {
+  transform: translateY(-15px) scale(1.05) rotate(0deg);
+  z-index: 4;
+}
+.carousel-stack:hover .carousel-card:nth-child(2) {
+  transform: translateX(-40px) translateY(5px) scale(0.98) rotate(-12deg);
+  opacity: 1;
+}
+.carousel-stack:hover .carousel-card:nth-child(3) {
+  transform: translateX(40px) translateY(5px) scale(0.98) rotate(12deg);
+  opacity: 1;
+}
+
+/* Reveal description on hover of individual card inside a stacked fan */
+.carousel-card:hover .card-desc {
+  transform: translateY(0);
+}
+.carousel-card:hover img {
+  transform: scale(1.05);
+}
+.carousel-stack:hover .carousel-card:hover {
+  z-index: 5;
+  transform: translateY(-20px) scale(1.08) rotate(0deg) !important;
+}
+
+/* Modal Styles */
+.design-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 9, 15, 0.95);
+  backdrop-filter: blur(15px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.design-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.design-modal.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+  object-fit: contain;
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.modal-close:hover {
+  color: var(--accent-pink);
+}
+.modal-caption {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+}
+
+@media (max-width: 768px) {
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+}
