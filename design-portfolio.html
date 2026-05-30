@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio Design Graphique de MBEPPA KENGGNE Bill-Gatte." />
-  
+
   <title>Bill-Gatte — Portfolio Design Graphique</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -20,163 +23,169 @@
 </head>
 
 <body>
-<canvas id="canvas-bg" aria-hidden="true"></canvas>
+  <canvas id="canvas-bg" aria-hidden="true"></canvas>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      NAVBAR
 ════════════════════════════════════════════ -->
-<nav id="navbar" role="navigation" aria-label="Navigation principale">
-  <div class="container nav-inner">
-    <!-- Logo -->
-    <a href="index.html" class="nav-logo" id="nav-logo-link">
-      <span class="logo-dot"></span>
-      bill<span style="color:var(--accent-teal)">.</span>gatte
-    </a>
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <span class="logo-dot"></span>
+        bill<span style="color:var(--accent-teal)">.</span>gatte
+      </a>
 
-    <!-- Links -->
-    <ul class="nav-links" id="nav-links" role="list">
-      <li><a href="index.html#about">À propos</a></li>
-      <li><a href="index.html#skills">Compétences</a></li>
-      <li><a href="index.html#projects">Projets</a></li>
-      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
-    </ul>
+      <!-- Links -->
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="index.html#skills">Compétences</a></li>
+        <li><a href="index.html#projects">Projets</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
 
-    <!-- Hamburger -->
-    <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+      <!-- Hamburger -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      HEADER SECTION
 ════════════════════════════════════════════ -->
-<section id="design-header" style="padding-top: 150px; padding-bottom: 50px;">
-  <div class="container">
-    <span class="section-label reveal">// Créations Visuelles</span>
-    <h1 class="section-title reveal" style="font-size: clamp(2rem, 5vw, 3.5rem);">
-      Mon Portfolio <span class="gradient-text">Design Graphique</span>
-    </h1>
-    <p class="section-subtitle reveal">
-      Une collection de mes réalisations visuelles. Survolez les piles pour les voir se déployer en éventail, et cliquez pour les afficher en plein écran.
-    </p>
-  </div>
-</section>
+  <section id="design-header" style="padding-top: 150px; padding-bottom: 50px;">
+    <div class="container">
+      <span class="section-label reveal">// Créations Visuelles</span>
+      <h1 class="section-title reveal" style="font-size: clamp(2rem, 5vw, 3.5rem);">
+        Mon Portfolio <span class="gradient-text">Design Graphique</span>
+      </h1>
+      <p class="section-subtitle reveal">
+        Une collection de mes réalisations visuelles. Survolez les piles pour les voir se déployer en éventail, et
+        cliquez pour les afficher en plein écran.
+      </p>
+    </div>
+  </section>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      GALLERY SECTION
 ════════════════════════════════════════════ -->
-<section id="design-gallery" style="padding-top: 0;">
-  <div class="container">
-    <div class="design-gallery reveal">
-      
-      <!-- Groupe 1 -->
-      <div class="carousel-stack">
-        <!-- Carte 1 -->
-        <div class="carousel-card" onclick="openModal('assets/images/design/design_poster_1_1779748512615.png', 'Affiche Cyberpunk Abstract')">
-          <img src="assets/images/design/design_poster_1_1779748512615.png" alt="Affiche Cyberpunk Abstract">
-          <div class="card-desc">Affiche Cyberpunk Abstract</div>
-        </div>
-        <!-- Carte 2 -->
-        <div class="carousel-card" onclick="openModal('assets/images/design/design_poster_2_1779748528170.png', 'Design Suisse Minimaliste')">
-          <img src="assets/images/design/design_poster_2_1779748528170.png" alt="Design Suisse Minimaliste">
-          <div class="card-desc">Design Suisse Minimaliste</div>
-        </div>
-        <!-- Carte 3 -->
-        <div class="carousel-card" onclick="openModal('assets/images/design/design_poster_3_1779748888188.png', 'Rendu 3D Abstrait')">
-          <img src="assets/images/design/design_poster_3_1779748888188.png" alt="Rendu 3D Abstrait">
-          <div class="card-desc">Rendu 3D Abstrait</div>
-        </div>
-      </div>
+  <section id="design-gallery" style="padding-top: 0;">
+    <div class="container">
+      <div class="design-gallery reveal">
 
-      <!-- Espace pour ajouter de futurs groupes (Groupes 2, 3, 4, 5...) -->
-      <!-- Exemple de placeholder pour montrer qu'on peut en ajouter d'autres -->
-      <!-- 
+        <!-- Groupe 1 -->
+        <div class="carousel-stack">
+          <!-- Carte 1 -->
+          <div class="carousel-card"
+            onclick="openModal('assets/images/design/design_poster_1_1779748512615.png', 'Affiche Cyberpunk Abstract')">
+            <img src="assets/images/design/design_poster_1_1779748512615.png" alt="Affiche Cyberpunk Abstract">
+            <div class="card-desc">Affiche Cyberpunk Abstract</div>
+          </div>
+          <!-- Carte 2 -->
+          <div class="carousel-card"
+            onclick="openModal('assets/images/design/design_poster_2_1779748528170.png', 'Design Suisse Minimaliste')">
+            <img src="assets/images/design/design_poster_2_1779748528170.png" alt="Design Suisse Minimaliste">
+            <div class="card-desc">Design Suisse Minimaliste</div>
+          </div>
+          <!-- Carte 3 -->
+          <div class="carousel-card"
+            onclick="openModal('assets/images/design/design_poster_3_1779748888188.png', 'Rendu 3D Abstrait')">
+            <img src="assets/images/design/design_poster_3_1779748888188.png" alt="Rendu 3D Abstrait">
+            <div class="card-desc">Rendu 3D Abstrait</div>
+          </div>
+        </div>
+
+        <!-- Espace pour ajouter de futurs groupes (Groupes 2, 3, 4, 5...) -->
+        <!-- Exemple de placeholder pour montrer qu'on peut en ajouter d'autres -->
+        <!-- 
       <div class="carousel-stack">
          ...
       </div> 
       -->
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      MODAL
 ════════════════════════════════════════════ -->
-<div class="design-modal" id="design-modal">
-  <div class="modal-content">
-    <button class="modal-close" onclick="closeModal()">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-    <img src="" alt="Aperçu" id="modal-image">
-    <div class="modal-caption" id="modal-caption"></div>
+  <div class="design-modal" id="design-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img src="" alt="Aperçu" id="modal-image">
+      <div class="modal-caption" id="modal-caption"></div>
+    </div>
   </div>
-</div>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      FOOTER
 ════════════════════════════════════════════ -->
-<footer role="contentinfo" style="margin-top: 50px;">
-  <div class="container footer-inner">
-    <div class="footer-logo">
-      bill<span>.</span>gatte — <span>Portfolio</span>
+  <footer role="contentinfo" style="margin-top: 50px;">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        bill<span>.</span>gatte — <span>Portfolio</span>
+      </div>
+
+      <div class="footer-sig">
+        <span>Portfolio — Pure JS | Automatisation &amp; IA</span><br>
+        <span style="color:var(--text-muted);font-size:0.7rem;">
+          © 2025 MBEPPA KENGNE Bill-Gatte
+        </span>
+      </div>
+
+      <div class="footer-social" aria-label="Liens sociaux">
+        <a href="https://github.com/mbillgatte-web" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/bill-gatte-mbeppa-14659839a" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
     </div>
+  </footer>
 
-    <div class="footer-sig">
-      <span>Portfolio — Pure JS | Automatisation &amp; IA</span><br>
-      <span style="color:var(--text-muted);font-size:0.7rem;">
-        © 2025 MBEPPA KENGGNE Bill-Gatte
-      </span>
-    </div>
+  <!-- ── JS ── -->
+  <script src="js/main.js" defer></script>
+  <script>
+    // Script pour la modale
+    const modal = document.getElementById('design-modal');
+    const modalImg = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
 
-    <div class="footer-social" aria-label="Liens sociaux">
-      <a href="https://github.com/mbillgatte-web" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/bill-gatte-mbeppa-14659839a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
-    </div>
-  </div>
-</footer>
-
-<!-- ── JS ── -->
-<script src="js/main.js" defer></script>
-<script>
-  // Script pour la modale
-  const modal = document.getElementById('design-modal');
-  const modalImg = document.getElementById('modal-image');
-  const modalCaption = document.getElementById('modal-caption');
-
-  function openModal(src, caption) {
-    modalImg.src = src;
-    modalCaption.textContent = caption;
-    modal.classList.add('active');
-  }
-
-  function closeModal() {
-    modal.classList.remove('active');
-    setTimeout(() => {
-      modalImg.src = "";
-      modalCaption.textContent = "";
-    }, 400); // Correspond à la durée de la transition CSS
-  }
-
-  // Fermer en cliquant en dehors de l'image (sur le fond sombre)
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
+    function openModal(src, caption) {
+      modalImg.src = src;
+      modalCaption.textContent = caption;
+      modal.classList.add('active');
     }
-  });
 
-  // Fermer avec la touche Échap
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
+    function closeModal() {
+      modal.classList.remove('active');
+      setTimeout(() => {
+        modalImg.src = "";
+        modalCaption.textContent = "";
+      }, 400); // Correspond à la durée de la transition CSS
     }
-  });
-</script>
+
+    // Fermer en cliquant en dehors de l'image (sur le fond sombre)
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Fermer avec la touche Échap
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  </script>
 
 </body>
+
 </html>
